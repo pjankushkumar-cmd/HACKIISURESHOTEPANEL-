@@ -183,8 +183,8 @@
 </main>
 
 <script>
-// IMPORTANT RENDER CONFIGURATION SETUP:
-const RENDER_BACKEND_APP = "https://hackiisureshotepanel-2.onrender.com/"; // Put your final Render URL here!
+// IMPORTANT RENDER CONFIGURATION SETUP: Fixed by removing trailing slash
+const RENDER_BACKEND_APP = "https://hackiisureshotepanel-2.onrender.com"; 
 
 let CURRENT_ACTIVE_KEY = localStorage.getItem("h19_approved_license") || "";
 let ADMIN_VERIFIED_PASSWORD = "";
@@ -359,5 +359,4 @@ window.onload = () => {
     }, 1000);
 };
 </script>
-</body>
-</html>
+<
